@@ -54,5 +54,13 @@ $ ./scripts/eval_non-mt.sh
 ## Reference
 Please find details in this paper:
 ```
-(waiting for arXiv announcement)
+@misc{han2024vocadt,
+      title={Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?}, 
+      author={HyoJung Han and Akiko Eriguchi and Haoran Xu and Hieu Hoang and Marine Carpuat and Huda Khayrallah},
+      year={2024},
+      eprint={2410.09644},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.09644}, 
+}
 ```
