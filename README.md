@@ -7,10 +7,13 @@ Only the input/output embeddings are replaced, while all other original weights 
 These are the merged version: after training the adapters, we merge the original embeddings with the adapter to generate the new embeddings.
 | Name | Adapted Model | Base Model | New Vocab Size | Focused Languages |
 |---|---|---|---|---|
-| VocADT-Latin | [h-j-han/Mistral-7B-VocADT-50k-Latin](https://huggingface.co/h-j-han/Mistral-7B-VocADT-50k-Latin) | [Mistral](https://huggingface.co/mistralai/Mistral-7B-v0.1) | 50k | Swahili (sw), Indonesian (id), Estonian (et), Haitian Creole (ht), English (en)|
-| VocADT-Mixed | [h-j-han/Mistral-7B-VocADT-50k-Mixed](https://huggingface.co/h-j-han/Mistral-7B-VocADT-50k-Mixed) | [Mistral](https://huggingface.co/mistralai/Mistral-7B-v0.1) | 50k | Korean (ko), Greek (el), Russian (ru), Bulgarian (bg), English (en) |
-| VocADT-Cyrillic | [h-j-han/Mistral-7B-VocADT-50k-Cyrillic](https://huggingface.co/h-j-han/Mistral-7B-VocADT-50k-Cyrillic) | [Mistral](https://huggingface.co/mistralai/Mistral-7B-v0.1) | 50k | Russian (ru), Bulgarian (bg), Ukrainian (uk), Kazakh (kk), English (en) |
-
+| VocADT-Latin-Mistral | [h-j-han/Mistral-7B-VocADT-50k-Latin](https://huggingface.co/h-j-han/Mistral-7B-VocADT-50k-Latin) | [Mistral](https://huggingface.co/mistralai/Mistral-7B-v0.1) | 50k | Swahili (sw), Indonesian (id), Estonian (et), Haitian Creole (ht), English (en)|
+| VocADT-Mixed-Mistral | [h-j-han/Mistral-7B-VocADT-50k-Mixed](https://huggingface.co/h-j-han/Mistral-7B-VocADT-50k-Mixed) | [Mistral](https://huggingface.co/mistralai/Mistral-7B-v0.1) | 50k | Korean (ko), Greek (el), Russian (ru), Bulgarian (bg), English (en) |
+| VocADT-Cyrillic-Mistral | [h-j-han/Mistral-7B-VocADT-50k-Cyrillic](https://huggingface.co/h-j-han/Mistral-7B-VocADT-50k-Cyrillic) | [Mistral](https://huggingface.co/mistralai/Mistral-7B-v0.1) | 50k | Russian (ru), Bulgarian (bg), Ukrainian (uk), Kazakh (kk), English (en) |
+|||||
+| VocADT-Latin-LLama | [h-j-han/Llama2-7B-VocADT-50k-Latin](https://huggingface.co/h-j-han/Llama2-7B-VocADT-50k-Latin) | [Llama](https://huggingface.co/meta-llama/Llama-2-7b-hf) | 50k | Swahili (sw), Indonesian (id), Estonian (et), Haitian Creole (ht), English (en)|
+| VocADT-Mixed-LLama | [h-j-han/Llama2-7B-VocADT-50k-Mixed](https://huggingface.co/h-j-han/Llama2-7B-VocADT-50k-Mixed) | [Llama](https://huggingface.co/meta-llama/Llama-2-7b-hf) | 50k | Korean (ko), Greek (el), Russian (ru), Bulgarian (bg), English (en) |
+| VocADT-Cyrillic-LLama | [h-j-han/Llama2-7B-VocADT-50k-Cyrillic](https://huggingface.co/h-j-han/Llama2-7B-VocADT-50k-Cyrillic) | [Llama](https://huggingface.co/meta-llama/Llama-2-7b-hf) | 50k | Russian (ru), Bulgarian (bg), Ukrainian (uk), Kazakh (kk), English (en) |
 ## Environment Setup
 ```bash
 $ conda create -n vocadt Python=3.11 pytorch=2.3.1  pytorch-cuda=12.1 torchvision torchaudio -c pytorch -c nvidia

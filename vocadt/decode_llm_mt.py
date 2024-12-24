@@ -150,7 +150,7 @@ def comets(
 
 def clean_output_string(output: str, suffix: str, nshot=0):
     try:
-        out = output.replace("\\n", "\n").split(suffix)[1 + nshot].split("\n")
+        out = output.split(suffix)[1 + nshot].split("\n")
         if out[0].strip() != "":
             return out[0].strip()
         elif out[1].strip() != "":
