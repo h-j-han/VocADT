@@ -1,4 +1,4 @@
-# VocADT: Adapters for Altering LLM Vocabularies - What Languages Benefit the Most?
+# [VocADT: Adapters for Altering LLM Vocabularies - What Languages Benefit the Most?](https://openreview.net/forum?id=KxQRHOre9D)
 We propose VocADT, a novel method for vocabulary adaptation using adapter modules that are trained to learn the optimal linear combination of existing embeddings while keeping the model’s weights fixed. 
 VocADT offers a flexible and scalable solution without requiring external resources or language constraints.
 
@@ -57,13 +57,12 @@ $ ./scripts/eval_non-mt.sh
 ## Reference
 Please find details in this paper:
 ```
-@misc{han2024vocadt,
-      title={Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?}, 
-      author={HyoJung Han and Akiko Eriguchi and Haoran Xu and Hieu Hoang and Marine Carpuat and Huda Khayrallah},
-      year={2024},
-      eprint={2410.09644},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2410.09644}, 
+@inproceedings{
+han2025adapters,
+title={Adapters for Altering {LLM} Vocabularies: What Languages Benefit the Most?},
+author={HyoJung Han and Akiko Eriguchi and Haoran Xu and Hieu Hoang and Marine Carpuat and Huda Khayrallah},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=KxQRHOre9D}
 }
 ```
